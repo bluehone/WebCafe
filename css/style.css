@@ -71,6 +71,7 @@ body{
 
 .member a{
   padding: 5 10px;
+  margin: 10px;
 }
 
 /* 헤더 */
@@ -83,7 +84,7 @@ body{
 /* 로고 */
 .logo{
   position: absolute;
-  top: 35px;
+  top: 45px;
   left: 65px;
 }
 
