@@ -265,6 +265,7 @@ animation-timing-function: ease-in-out;
   background: rgb(252, 210, 132) radial-gradient(circle at right top, rgb(243, 150, 64),  rgb(255, 115, 0));
   border-radius: 5px;
   padding: 10px;
+  box-shadow: 5px 5px 0 0 #ccc;
 }
 
 .login-heading{
@@ -322,7 +323,7 @@ animation-timing-function: ease-in-out;
 
 .sign{
   background: rgb(255,255,255);
-  border-radius: 0, 0, 5px, 5px;
+  border-radius: 0 0 5px 5px;
   display:flex;
   justify-content: space-between;
   padding: 10px;
@@ -332,4 +333,24 @@ animation-timing-function: ease-in-out;
 .sign .icon-right-open::before{
   color:rgb(255, 115, 0);
   margin: 0;
+}
+
+/* 유효성 검사 배너 */
+.validation{
+  margin-top: 25px;
+}
+
+.validation-list a{
+  display: block;
+  background: url("images/validation_icon.png") no-repeat 20px 50%, 
+  linear-gradient(180deg, #bbb, #eee);
+  background-color: #bbb;
+  border-radius: 30px;
+  border: 1px solid #aaa;
+  padding: 8px 15px 8px 45px;
+  margin: 10px 0;
+}
+
+.validation-list a:hover, .validation-list a:hover{
+color: rgb(255,0,0);
 }
