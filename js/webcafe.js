@@ -3,6 +3,7 @@ var subLink = $('.sub-menu a');
 var section = $('.board section');
 var tab = $('.tab');
 var boardLi = $('.board li');
+var related = $('.related-list');
 
 boardLi.addClass('icon-dot-circled');
 subLink.addClass('icon-dot-circled');
@@ -22,3 +23,11 @@ tab.on('click keyup', function(e){
   }
 });
 
+// 관련사이트 애니메이션을 위한 스크립트
+related.on('mouseover focusin', function(){
+  $(this).addClass('related-act');
+});
+
+related.on('mouseout focusout', function(){
+  $(this).removeClass('related-act');
+});
